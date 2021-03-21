@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngblog-d0d43": {
+      "hosting": {
+        "ngBlog": [
+          "ngblog-d0d43"
+        ]
+      }
+    }
+  }
+}

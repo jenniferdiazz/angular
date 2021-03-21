@@ -1,0 +1,34 @@
+
+<div class="container" *ngIf="posts$ | async as posts; else loading">
+  
+    <mat-card class="post-card" *ngFor="let post of posts$ | async">
+        <mat-card-header>
+          <mat-card-title>
+              <a [routerLink]="['/post', post.id]">
+                  {{post.titlePost}}
+              </a>
+            </mat-card-title>
+        </mat-card-header>
+        <img matCardImage [src]="post.imagePost" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{post.contentPost}}
+          </p>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+          <mat-chip-list>
+            <mat-chip selected *ngFor="let tag of post.tagsPost" [ngClass]="tag">
+              {{ tag }}
+            </mat-chip>
+          </mat-chip-list>
+        </mat-card-actions>
+       
+      </mat-card>
+</div>
+<ng-template #loading>
+  <div class="container-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+  Loading...
+</ng-template>
