@@ -8,7 +8,9 @@
     </a>
     <span class="fill-remaining-space"></span>
 </mat-toolbar>
-{{ opened }}
+<div >
+<button style="margin-top: 30px; margin-left: 50px;" routerLink="posts"   mat-flat-button color="primary"><mat-icon>book</mat-icon></button>
+</div>
 <mat-sidenav-container>
     <mat-sidenav #sideNav [(opened)]="opened" mode="side">
         <mat-nav-list>

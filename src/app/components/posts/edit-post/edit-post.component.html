@@ -1,7 +1,8 @@
 <div class="new-post-container">
-    <form [formGroup]="newPostForm" (ngSubmit)="addNewPost(newPostForm.value)">
+    <form [formGroup]="editPostForm" (ngSubmit)="editPost(editPostForm.value)">
         <mat-form-field>
             <mat-label>Title</mat-label>
+           
             <input matInput placeholder="Title post" formControlName="titlePost">
         </mat-form-field>
         <mat-form-field>
@@ -28,3 +29,4 @@
 </div>
     </form>
 </div>
+
