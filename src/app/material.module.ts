@@ -12,7 +12,12 @@ import {
        MatDividerModule,
        MatChipsModule,
        MatInputModule,
-       MatFormFieldModule
+       MatFormFieldModule,
+       MatTableModule,
+       MatPaginatorModule,
+       MatSortModule,
+       MatDialogModule
+     
       } from '@angular/material';
 
 const myModule=[MatCardModule,
@@ -26,7 +31,12 @@ MatIconModule,
  MatDividerModule,
  MatChipsModule,
  MatInputModule,
- MatFormFieldModule
+ MatFormFieldModule,
+ MatTableModule,
+ MatPaginatorModule,
+ MatSortModule,
+ MatDialogModule
+       
  ];
 
 
