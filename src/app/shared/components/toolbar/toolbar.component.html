@@ -2,10 +2,10 @@
     <a routerLink="/">{{appName}}</a>
     <span class="fill-remaining-space"></span>
     <a routerLink="/admin" routerLinkActive="active"
-    *ngIf="authSvc.userData"> <button mat-button>admin</button></a>
+    *ngIf="authSvc.userData$"> <button mat-button>admin</button></a>
     <a routerLink="/about" routerLinkActive="active"> <button mat-button>about</button></a>
     
-    <a *ngIf="authSvc.userData | async; else showLogin" (click)="onLogout()">
+    <a *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogout()">
         <button mat-button>Logout</button>
     </a>
     <ng-template #showLogin>

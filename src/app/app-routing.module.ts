@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PostComponent } from './components/posts/post/post.component';
 import { ContainerAppComponent } from './components/pages/container-app/container-app.component';
-import { ListPostsComponent } from './components/posts/list-posts/list-posts.component';
 
 const routes: Routes = [
   {path:'', 
